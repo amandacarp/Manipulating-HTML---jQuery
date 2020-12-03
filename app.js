@@ -1,5 +1,5 @@
 //1. Make a button appear on the page and make it alert a nice message
-let button = $('<button>CLICK ME TO ALERT A NICE MESSAGE</button>');
+let button = $('<button class="btn btn-success m-2">CLICK ME TO ALERT A NICE MESSAGE</button>');
 $('body').append(button);
 button.click(function () {
     alert("HELLO THERE");
@@ -9,7 +9,7 @@ button.click(function () {
 $('#secondButton').click(function (e) {
     e.preventDefault();
     let textValue = $("input[type=text]").val()
-    alert($('input[type=text]').val());
+    alert(textValue);
 })
 
 //3a. hover over div to change color
@@ -20,7 +20,7 @@ $(divHover).mouseover(function () {
 
 //3b. change back to originial color when mouse off
 $(divHover).mouseout(function () {
-    divHover.removeAttr('style'); ß
+    divHover.removeAttr('style'); 
 })
 
 //4. Click paragraph to change to random color
@@ -37,7 +37,7 @@ $(para).click(function () {
 })
 
 //5a. add button and empty div
-let buttonTwo = $('<button>CLICK ME TO WRITE NAME</button>');
+let buttonTwo = $('<button class="btn btn-success m-2">CLICK ME TO WRITE NAME</button>');
 $('body').append(buttonTwo);
 let emptyDiv = $('<div></div>')
 $('body').append(emptyDiv);
